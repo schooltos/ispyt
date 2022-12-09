@@ -5,7 +5,7 @@ def word_count(text):
         line_count += 1
         words_in_line = line.split(" ")
         wrd_cnt = wrd_cnt + len(words_in_line)
-        print(f"There is {wrd_cnt} words in {line_count} paragraph")
+        print(f"There are {wrd_cnt} words in {line_count} paragraph")
 
 def letter_count(text):
     lttr_cnt = 0
@@ -13,7 +13,7 @@ def letter_count(text):
     for line in text:
         line_count += 1
         lttr_cnt = len(line)
-        print(f"There is {lttr_cnt} letters in {line_count} paragraph")
+        print(f"There are {lttr_cnt} letters in {line_count} paragraph")
 
 with open("file.txt", "r") as fl:
     file_txt = fl.readlines()
