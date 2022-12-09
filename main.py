@@ -3,8 +3,8 @@ def word_count(text):
     line_count = 0
     for line in text:
         line_count += 1
-        f = line.split(" ")
-        wrd_cnt = wrd_cnt + len(f)
+        words_in_line = line.split(" ")
+        wrd_cnt = wrd_cnt + len(words_in_line)
         print(f"There is {wrd_cnt} words in {line_count} paragraph")
 
 def letter_count(text):
